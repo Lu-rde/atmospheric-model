@@ -1,12 +1,12 @@
 # Atmospheric Model Roadmap
 
-## v0.1
-- Project structure
-- Constants
-- Atmosphere class
+## ✅ v0.1
+- [x] Project structure
+- [x] Constants
+- [x] Atmosphere class
 
-## v0.2
-- Temperature model
+## 🟡 v0.2
+- [ ] Temperature model
 
 ## v0.3
 - Pressure model
