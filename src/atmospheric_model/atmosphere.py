@@ -14,7 +14,7 @@ class Atmosphere:
         self.temperature = self.calculate_temperature()
         self.pressure = self.calculate_pressure()
 
-        self.density = None
+        self.density = self.calculate_density()
         self.speed_of_sound = None
         self.layer = "Troposphere"
 
@@ -45,6 +45,20 @@ class Atmosphere:
                 constants.SEA_LEVEL_TEMPERATURE
             ) ** exponent
         )
+    
+    def calculate_density(self):
+        """
+        Calculates air density according to the ideal gas law.
+        """
+        
+        return (
+            self.pressure /
+            (
+                constants.GAS_CONSTANT *
+                self.temperature
+                
+            )
+        )
 
     def summary(self):
 
@@ -52,5 +66,5 @@ class Atmosphere:
         print(f"Layer: {self.layer}")
         print(f"Temperature: {self.temperature:.2f} K")
         print(f"Pressure: {self.pressure:.2f} Pa")
-        print(f"Density: {self.density}")
+        print(f"Density: {self.density:.4f} kg/m³")
         print(f"Speed of sound: {self.speed_of_sound}")
