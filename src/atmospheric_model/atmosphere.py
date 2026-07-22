@@ -12,16 +12,15 @@ class Atmosphere:
         self.altitude = altitude
 
         self.temperature = self.calculate_temperature()
+        self.pressure = self.calculate_pressure()
 
-        self.pressure = None
         self.density = None
         self.speed_of_sound = None
         self.layer = "Troposphere"
 
     def calculate_temperature(self):
         """
-        Calculates the ISA temperature for altitudes
-        between 0 and 11 km.
+        Calculates temperature according to ISA.
         """
 
         return (
@@ -29,11 +28,29 @@ class Atmosphere:
             + constants.TEMPERATURE_LAPSE_RATE * self.altitude
         )
 
+    def calculate_pressure(self):
+        """
+        Calculates pressure according to ISA.
+        """
+
+        exponent = (
+            -constants.GRAVITY /
+            (constants.TEMPERATURE_LAPSE_RATE * constants.GAS_CONSTANT)
+        )
+
+        return (
+            constants.SEA_LEVEL_PRESSURE *
+            (
+                self.temperature /
+                constants.SEA_LEVEL_TEMPERATURE
+            ) ** exponent
+        )
+
     def summary(self):
 
         print(f"Altitude: {self.altitude:.1f} m")
         print(f"Layer: {self.layer}")
         print(f"Temperature: {self.temperature:.2f} K")
-        print(f"Pressure: {self.pressure}")
+        print(f"Pressure: {self.pressure:.2f} Pa")
         print(f"Density: {self.density}")
         print(f"Speed of sound: {self.speed_of_sound}")
