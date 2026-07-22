@@ -1,3 +1,5 @@
+import math
+
 from . import constants
 
 
@@ -15,7 +17,7 @@ class Atmosphere:
         self.pressure = self.calculate_pressure()
 
         self.density = self.calculate_density()
-        self.speed_of_sound = None
+        self.speed_of_sound = self.calculate_speed_of_sound()
         self.layer = "Troposphere"
 
     def calculate_temperature(self):
@@ -59,6 +61,16 @@ class Atmosphere:
                 
             )
         )
+    
+    def calculate_speed_of_sound(self):
+        """
+        Calculates the speed of sound according to ISA.
+        """
+        return math.sqrt(
+            constants.GAMMA *
+            constants.GAS_CONSTANT *
+            self.temperature
+        )
 
     def summary(self):
 
@@ -67,4 +79,18 @@ class Atmosphere:
         print(f"Temperature: {self.temperature:.2f} K")
         print(f"Pressure: {self.pressure:.2f} Pa")
         print(f"Density: {self.density:.4f} kg/m³")
-        print(f"Speed of sound: {self.speed_of_sound}")
+        print(f"Speed of sound: {self.speed_of_sound:.2f} m/s")
+        
+    def to_dict(self):
+        """
+        Returns the atmospheric properties as a dictionary.
+        """
+        return {
+            "altitude": self.altitude,
+            "layer": self.layer,
+            "temperature": self.temperature,
+            "pressure": self.pressure,
+            "density": self.density,
+            "speed_of_sound": self.speed_of_sound,
+            
+        }

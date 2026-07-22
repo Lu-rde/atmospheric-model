@@ -16,6 +16,8 @@ def main():
 
         atm.summary()
 
+        print(atm.to_dict())
+
         print("-" * 40)
 
 
