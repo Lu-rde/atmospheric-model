@@ -1,0 +1,10 @@
+[
+  "tests/test_atmosphere.py::test_density_decreases_with_altitude",
+  "tests/test_atmosphere.py::test_pressure_decreases_with_altitude",
+  "tests/test_atmosphere.py::test_sea_level_density",
+  "tests/test_atmosphere.py::test_sea_level_pressure",
+  "tests/test_atmosphere.py::test_sea_level_temperature",
+  "tests/test_atmosphere.py::test_speed_of_sound",
+  "tests/test_atmosphere.py::test_speed_of_sound_decreases_with_altitude",
+  "tests/test_atmosphere.py::test_temperature_decreases_with_altitude"
+]
