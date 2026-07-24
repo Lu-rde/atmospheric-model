@@ -1,3 +1,15 @@
+Metadata-Version: 2.4
+Name: atmospheric-model
+Version: 1.0.0
+Summary: International Standard Atmosphere (ISA) model for aerospace engineering.
+Author: Elisabeth Mcnegera
+License: MIT
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Dynamic: license-file
+
 <p align="center">
   <img src="images/banner.png" alt="Atmospheric Model Banner" width="100%">
 </p>
@@ -179,22 +191,17 @@ pytest
 
 ---
 
-## 🌍 AeroPortfolio
+## 🚀 AeroPortfolio
 
-This project is part of **AeroPortfolio**, a collection of aerospace engineering projects documenting my learning journey throughout my Aerospace Engineering degree.
+This project is one component of the AeroPortfolio ecosystem.
 
-| Project | Description |
-|---------|-------------|
-| 🌍 [Atmospheric Model](https://github.com/YOUR_USERNAME/atmospheric-model) | International Standard Atmosphere implemented in Python |
-| 🚀 [Rocket Flight Simulator](https://github.com/YOUR_USERNAME/rocket-flight-simulator) | Numerical simulation of vertical rocket flight |
-| 🛰️ Orbital Mechanics | *Coming Soon* |
-| 📡 CubeSat Mission Analysis | *Coming Soon* |
+Future projects include:
 
-The goal of AeroPortfolio is to progressively develop a collection of open-source aerospace engineering tools covering atmospheric modelling, flight dynamics, orbital mechanics and space systems.
-
-Explore the complete portfolio here:
-
-➡️ **https://github.com/YOUR_USERNAME/AeroPortfolio**
+- 🚀 Rocket Flight Simulator
+- 🛰️ CubeSat Mission Simulator
+- 🌍 Wind Field Model
+- 🪐 Orbital Mechanics Toolkit
+- 📡 CanSat Descent Simulator
 
 ---
 
