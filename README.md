@@ -185,8 +185,8 @@ This project is part of **AeroPortfolio**, a collection of aerospace engineering
 
 | Project | Description |
 |---------|-------------|
-| 🌍 [Atmospheric Model](https://github.com/YOUR_USERNAME/atmospheric-model) | International Standard Atmosphere implemented in Python |
-| 🚀 [Rocket Flight Simulator](https://github.com/YOUR_USERNAME/rocket-flight-simulator) | Numerical simulation of vertical rocket flight |
+| 🌍 [Atmospheric Model](https://github.com/Lu-rde/atmospheric-model) | International Standard Atmosphere implemented in Python |
+| 🚀 [Rocket Flight Simulator](https://github.com/Lu-rde/rocket-flight-simulator) | Numerical simulation of vertical rocket flight |
 | 🛰️ Orbital Mechanics | *Coming Soon* |
 | 📡 CubeSat Mission Analysis | *Coming Soon* |
 
@@ -194,7 +194,7 @@ The goal of AeroPortfolio is to progressively develop a collection of open-sourc
 
 Explore the complete portfolio here:
 
-➡️ **https://github.com/YOUR_USERNAME/AeroPortfolio**
+➡️ **https://github.com/Lu-rde/AeroPortfolio**
 
 ---
 
